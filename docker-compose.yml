@@ -11,6 +11,7 @@ services:
     volumes:
       - config:/config
       - downloads:/downloads
+      - temp:/tmp
     ports:
       - 6881:6881
       - 6881:6881/udp
@@ -19,5 +20,6 @@ services:
 
 volumes:
   downloads:
+  temp:
   config:
   
